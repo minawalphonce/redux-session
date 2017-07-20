@@ -19,7 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "rs",
       "styles": [
-        "styles.css"
+        "themes/styles.less"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
@@ -51,7 +51,7 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "less",
     "component": {}
   }
 }
