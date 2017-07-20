@@ -1,0 +1,27 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th width="1%">
+      </th>
+      <th>
+        Title
+      </th>
+      <th>
+        Due Date
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let task of tasks" [class.done]="task.done">
+      <td>
+        <input type="checkbox" [checked]="task.done" (change)="onToggleDone(task)" />
+      </td>
+      <td>
+        {{task.title}}
+      </td>
+      <td>
+        {{task.due | date}}
+      </td>
+    </tr>
+  </tbody>
+</table>

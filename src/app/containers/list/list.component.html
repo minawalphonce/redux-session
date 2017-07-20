@@ -1,3 +1,11 @@
-<p>
-  list works!
-</p>
+<div class="container">
+  <div class="page-header">
+    <h3>Tasks List</h3>
+  </div>
+  <rs-grid [tasks]="tasks$ | async" (doneChange)="onDoneChange($event)">
+  </rs-grid>
+  <!-- <a class="btn btn-primary btn-sm pull-right" routerLink="/new">
+      <i class="glyphicon glyphicon-plus"></i>
+      New Task
+    </a> -->
+</div>

@@ -9,9 +9,9 @@
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <a>
-            Due Tasks
-            <span class="badge bagde-warning"> 23 </span>
+          <a *ngIf="pendingTasksCount > 0">
+            Pending Tasks
+            <span class="badge bagde-warning"> {{pendingTasksCount}} </span>
           </a>
         </li>
       </ul>
